@@ -67,6 +67,7 @@ You can assume the arrays that are being input are of the same length
 * `countAB`
   * Write a function called countAB that takes in a single string and returns an array of length two.  The first item in the array should be the count of every A character in the array.  The 2nd item should be the count of every B character in the array.  
   * No need to add the count of A and B together.  Again, we want an array with the separate counts of each
+  * Your function should account for both cases (upper and lower) of each letter.
 
 * `addStringIfLastS`
   * Write a function called addStringIfLastS() that takes in two parameters.  First, an array of strings and second a single string.  
