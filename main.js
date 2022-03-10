@@ -229,15 +229,22 @@ function twoSmallest(arr){
     if (arr.length < 2){
         return undefined
     };
-    if (arr.length === 2){
-        return arr[0] < arr[1] ? [arr[0],arr[1]] : [arr[1],arr[0]];
-    };
-    let smallest = arr[0];
+    
+    let smallest;
     let nextSmallest;
-    for (let i = 1; i < arr.length; i++){
+    if(arr[0] < arr[1]){
+        smallest = arr[0]
+        nextSmallest = arr[1]
+    } else  {
+        nextSmallest = arr[0]
+        smallest = arr[1]
+    };
+    for (let i = 2; i < arr.length; i++){
         if(arr[i] < smallest){
             nextSmallest = smallest;
             smallest = arr[i];
+        } else if (arr[i] < nextSmallest){
+            nextSmallest = arr [i]
         };
     };
     return [smallest, nextSmallest];
@@ -247,7 +254,7 @@ function twoSmallest(arr){
 console.log("twoSmallest");
 //Add console.logs here to test!  Feel free to format this section however you like
 console.log(twoSmallest([4,100,89,34,2,8,-4]))
-console.log(twoSmallest([10,8]))
-console.log(twoSmallest([4]))
+console.log(twoSmallest([7,8,10,11]))
+console.log(twoSmallest([]))
 console.log("\n");
 
