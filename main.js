@@ -135,6 +135,7 @@ console.log("\n/////////////////////////////////////////////////////////////////
 /*
 Write a function called countAB that takes in a single string and returns an array of length two.  The first item in the array should be the count of every A character in the array.  The 2nd item should be the count of every B character in the array.  
 No need to add the count of A and B together.  Again, we want an array with the separate counts of each
+Your function should account for both cases (upper and lower) of each letter.
 */
 
 function countAB(){
@@ -153,6 +154,7 @@ console.log("\n/////////////////////////////////////////////////////////////////
 Write a function called addStringIfLastS() that takes in two parameters.  First, an array of strings and second a single string.  
 Go through each string in the array.  If the string ends in the letter 's' (either case), append your string input to that string in the array.
 Finally, return your modified array.
+Example: addStringIfLastS(['test', 'testing', 'testings'], 'TEST') => ['test', 'testing', 'testingsTEST']
 */
 
 function addStringIfLastS(){
